@@ -1,6 +1,6 @@
 ## Machine learning of plasma fluid closures
 
-This project is different from most other space physics machine learning projects that are almost exclusively driven by observational data. And it would be the among the first attempts to enhance the underlying physics of a physics-based plasma simulation model.
+This project is different from most other space physics machine learning projects that are almost exclusively driven by observational data. Instead, it attempts to enhance the underlying physics of a physics-based plasma simulation model.
 
 
 ### Motivation
@@ -47,6 +47,8 @@ This project is different from most other space physics machine learning project
   - Learn and try some basic structures of neural networks.
   - Learn how to accelerate the code using GPU.
   - Learn how to debug TensorFlow codes.
+  - Learn the saved model coefficients/parameters and possibly how to use them outside of TensorFlow.
+  - Learn to use PyTorch.
 - We will extend the code to 2d/3d where certain type of neural networks could perform better than the others, and GPU acceleration could be more significant.
 
 
