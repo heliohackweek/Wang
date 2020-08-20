@@ -23,9 +23,9 @@ This project is different from most other space physics machine learning project
 
 #### More on the physics
 - As an example, one could evolve a 1d electrostatic plasma using the following fluid equations    
-  <img src="https://render.githubusercontent.com/render/math?math=(1)\quad\frac{\partial\rho}{\partial t}+\frac{\partial}{\partial x}\left(\rho u\right)=0">   
-  <img src="https://render.githubusercontent.com/render/math?math=(2)\quad\frac{\partial}{\partial t}\left(\rho u\right)+\frac{\partial}{\partial x}\left(\rho u\right)=-\frac{\partial p}{\partial x}+\frac{e}{m}\rho E">  
-  <img src="https://render.githubusercontent.com/render/math?math=(3)\quad\frac{\partial p}{\partial t}+\frac{\partial}{\partial x}\left(pu\right)=-2p\frac{\partial u}{\partial x}-\frac{\partial q}{\partial x}">  
+  <img src="https://render.githubusercontent.com/render/math?math=(1)\quad\frac{\partial\rho}{\partial t}%2B\frac{\partial}{\partial x}\left(\rho u\right)=0">   
+  <img src="https://render.githubusercontent.com/render/math?math=(2)\quad\frac{\partial}{\partial t}\left(\rho u\right)%2B\frac{\partial}{\partial x}\left(\rho u\right)=-\frac{\partial p}{\partial x}+\frac{e}{m}\rho E">  
+  <img src="https://render.githubusercontent.com/render/math?math=(3)\quad\frac{\partial p}{\partial t}%2B\frac{\partial}{\partial x}\left(pu\right)=-2p\frac{\partial u}{\partial x}-\frac{\partial q}{\partial x}">  
   where t is time, ρ is density, u is velocity, p is pressure, q is pressure, E is electric field computed/supplied elsewhere, and m is single particle mass.
 - The so-called closure problem here is that we need to specify q which is needed to solve the equations in time.
 - In this project, we consider the closure suggested by ([Hammett & Perkins 1990 PRL](https://w3.pppl.gov/~hammett/refs/1990/Hammett_90_PRL_Landau_fluid_corrected.pdf)), which is forumulated in the Fourier space (k-space):  
