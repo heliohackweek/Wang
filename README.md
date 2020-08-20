@@ -16,6 +16,8 @@ This project is different from most other space physics machine learning project
 - Our goal for this Hackweek is a little bit shifted to make the tasks feasible within the time frame.
   - We will use data computed from a known closure, that works well for a certain type of problems (i.e., 1d electrostatic Landau damping).
   - It is highly likely that the same methodology/enhancement will be usable to train data from actual kinetic simulations. This work is a reproduction of the work in a recent [Ma+ 2020 POP](http://arxiv.org/abs/1909.11509).
+- If successful in the end, we could greatly enhance the physics capabilities of existing fluid-based plasma models that are widely used in astrophysics, space physics, laboratory plasma physics.
+  - For example, a [promising new planetary magnetosphere model](https://www.nas.nasa.gov/SC19/demos/demo7.html) currently uses a simplified closure, which could be a closure model trained with simulation data from expensive kinetic simulations.
 
 
 #### More on the physics
@@ -43,6 +45,7 @@ This project is different from most other space physics machine learning project
   - Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
   - Learn and try some basic structures of neural networks.
   - Learn how to accelerate the code using GPU.
+  - Learn how to debug TensorFlow codes.
 - We will extend the code to 2d/3d where certain type of neural networks could perform better than the others, and GPU acceleration could be more significant.
 
 
