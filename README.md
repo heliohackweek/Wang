@@ -1,5 +1,7 @@
 ## Machine learning of fluid closures
 
+This project is different from most other space physics machine learning projects that are almost exclusively based on observational data. And it would be the among the first attempts to enhance the underlying physics of a physics-based plasma simulation model.
+
 
 ### Motivation
 
@@ -12,7 +14,7 @@
   - Sometimes, a prescribed closure may give inaccurate results for certain problems.
 - Our ultimate goald is to use Machine Learning to extract the more accurate closures from kinetic simulation results.
 - Our goal for this Hackweek is a little bit shifted to make the tasks feasible within the time frame.
-  - We will use data computed from a known closure, that works well for a certain type of problems (i.e., 1d electrostatic Landau damping.
+  - We will use data computed from a known closure, that works well for a certain type of problems (i.e., 1d electrostatic Landau damping).
   - It is highly likely that the same methodology/enhancement will be usable to train data from actual kinetic simulations. This work is a reproduction of the work in a recent [Ma+ 2020 POP](http://arxiv.org/abs/1909.11509).
 
 
@@ -25,8 +27,9 @@
 - The so-called closure problem here is that we need to specify q which is needed to solve the equations in time.
 - In this project, we consider the closure suggested by ([Hammett & Perkins 1990 PRL](https://w3.pppl.gov/~hammett/refs/1990/Hammett_90_PRL_Landau_fluid_corrected.pdf)), which is forumulated in the Fourier space (k-space):  
   <img src="https://render.githubusercontent.com/render/math?math=(4)\quad\tilde{q}_{k}=-n_{0}\chi_{1}\frac{\sqrt{2}v_{t}}{\left|k\right|}ik\tilde{T}_{k}">  
-  where <img src="https://render.githubusercontent.com/render/math?math=\tilde{q}"> is the heat flux fluctuation in the k space
-  <img src="https://render.githubusercontent.com/render/math?math=\tilde{T}=\left(\tilde{p}-T_{0}\tilde{n}\right)/n_{0},">  is the temperature fluctuation in the k space, <img src="https://render.githubusercontent.com/render/math?math=\chi_{1}=\frac{2}{\sqrt{\pi}}"> is a chosen constant, n0 is the background density, T0 is vt is the background temperature, and <img src="https://render.githubusercontent.com/render/math?math=v_t=\sqrt{T/m}"> is the thermal speed.
+  where <img valign="middle" src="https://render.githubusercontent.com/render/math?math=\tilde{q}"> is the heat flux fluctuation in the k space
+  <img valign="middle" src="https://render.githubusercontent.com/render/math?math=\tilde{T}=\left(\tilde{p}-T_{0}\tilde{n}\right)/n_{0},">  is the temperature fluctuation in the k space, <img valign="middle" src="https://render.githubusercontent.com/render/math?math=\chi_{1}=\frac{2}{\sqrt{\pi}}"> is a chosen constant, n0 is the background density, T0 is vt is the background temperature, and <img valign="middle" src="https://render.githubusercontent.com/render/math?math=v_t=\sqrt{T/m}"> is the thermal speed.
+- This closure works well for a certain type of problems (i.e., 1d electrostatic Landau damping). There are other closures that work better for other problems.
 - There are 2d and 3d versions of such closures that we will also explore if time allows.
 
 
