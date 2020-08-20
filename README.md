@@ -15,7 +15,8 @@ This project is different from most other space physics machine learning project
 - Our ultimate goald is to use Machine Learning to extract the more accurate closures from kinetic simulation results.
 - Our goal for this Hackweek is a little bit shifted to make the tasks feasible within the time frame.
   - We will use data computed from a known closure, that works well for a certain type of problems (i.e., 1d electrostatic Landau damping).
-  - It is highly likely that the same methodology/enhancement will be usable to train data from actual kinetic simulations. This work is a reproduction of the work in a recent [Ma+ 2020 POP](http://arxiv.org/abs/1909.11509).
+  - This work is a reproduction of the work in a recent [Ma+ 2020 POP](http://arxiv.org/abs/1909.11509).
+  - It is highly likely that the same methodology/enhancement will be usable to train data from actual kinetic simulations.
 - If successful in the end, we could greatly enhance the physics capabilities of existing fluid-based plasma models that are widely used in astrophysics, space physics, laboratory plasma physics.
   - For example, a [promising new planetary magnetosphere model](https://www.nas.nasa.gov/SC19/demos/demo7.html) currently uses a simplified closure, which could be a closure model trained with simulation data from expensive kinetic simulations.
 
@@ -38,7 +39,7 @@ This project is different from most other space physics machine learning project
 ### Tentative project tasks
 - We will first build a simple model to learn the closure given by equation (1).
   - The input/feature data T consists sinusoidal modes of random phases and amplitudes.
-  - The output/label q will be computed from the closure equation (1).
+  - The output/label data q will be computed from the closure equation (1).
 - We will try to understand the simple model and enhance it. Example tasks are
   - Understand the model performance scores.
   - Learn how to find optimal hyper-parameters (i.e., those related to machine learning algorithms).
