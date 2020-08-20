@@ -1,6 +1,6 @@
 ## Machine learning of fluid closures
 
-This project is different from most other space physics machine learning projects that are almost exclusively based on observational data. And it would be the among the first attempts to enhance the underlying physics of a physics-based plasma simulation model.
+This project is different from most other space physics machine learning projects that are almost exclusively driven by observational data. And it would be the among the first attempts to enhance the underlying physics of a physics-based plasma simulation model.
 
 
 ### Motivation
@@ -33,7 +33,7 @@ This project is different from most other space physics machine learning project
 - There are 2d and 3d versions of such closures that we will also explore if time allows.
 
 
-#### Tentative project tasks
+### Tentative project tasks
 - We will first build a simple model to learn the closure given by equation (1).
   - The input/feature data T consists sinusoidal modes of random phases and amplitudes.
   - The output/label q will be computed from the closure equation (1).
