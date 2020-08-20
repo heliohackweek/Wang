@@ -1,7 +1,5 @@
 ## Machine learning of plasma fluid closures
 
-This project is different from most other space physics machine learning projects that are almost exclusively driven by observational data. Instead, it attempts to enhance the underlying physics of a physics-based plasma simulation model.
-
 
 ### Motivation
 
