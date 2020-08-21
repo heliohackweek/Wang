@@ -56,7 +56,7 @@
 - David Hall (Nvidia)
 - Sheng Huang (Boston University)
 - Colin Komar (NASA/GSFC)
-- Jian Li (NASA/NCCS)
+- Jian Li (NASA/GSFC)
 - Ryan McGranaghan (ASTRA)
 - Saumitra Mukherjee (NASA/GSFC)
 - Lutz Rastaetter (NASA/GSFC)
