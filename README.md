@@ -40,6 +40,7 @@
   - The output/label data q will be computed from the closure equation (1).
 - We will try to understand the simple model and enhance it. Example tasks are
   - Understand the model performance scores.
+  - Learn how to train data batch-by-batch.
   - Learn how to find optimal hyper-parameters (i.e., those related to machine learning algorithms).
   - Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
   - Learn and try some basic structures of neural networks.
