@@ -48,6 +48,7 @@
   - Learn how to debug TensorFlow codes.
   - Learn the saved model coefficients/parameters and possibly how to use them outside of TensorFlow.
   - Learn to use PyTorch.
+  - Learn to write codes that chooses between CPU and GPU automatically.
 - We will extend the code to 2d/3d where certain type of neural networks could perform better than the others, and GPU acceleration could be more significant.
 
 
