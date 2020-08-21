@@ -53,11 +53,10 @@
 
 
 ### Team
-- Daniel da Silva (NASA/GSFC)
-- David Hall (Nvidia)
+- David Hall (Nvidia; Support)
 - Sheng Huang (Boston University)
 - Colin Komar (NASA/GSFC)
-- Jian Li (NASA/GSFC)
+- Jian Li (NASA/GSFC; Support)
 - Ryan McGranaghan (ASTRA)
 - Saumitra Mukherjee (NASA/GSFC)
 - Lutz Rastaetter (NASA/GSFC)
