@@ -30,8 +30,10 @@
   ```
   Here, `-c bokeh` specifiy the channel in conda for the package `bokeh`. Sometimes, it is not necessary to specify the channel. If you are not sure about the channel or any specifics, it is usually useful to search for it in Google or https://anaconda.org/.
 
-### Clone the project's Github repository
-`git clone https://github.com/heliohackweek/plasma_closure.git`
+### Collatorative working on the project's Github repository
+- `git clone https://github.com/heliohackweek/plasma_closure.git`
+- Check out the [resource page](https://github.com/edmondb/helio_info)
+- [git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 
 ### View/run the Jupyter Notebooks
