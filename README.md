@@ -1,6 +1,6 @@
 ## Machine learning of plasma fluid closures
 
-In this Hackweek project, we first build a simple machine learning model for [plasma fluid closure](intro_physics.md). We enhance the model's performance and extend the its capability, during which we learn about basic machine learning techniques and best practices.
+In this Hackweek project, we first build a simple [machine learning model for plasma fluid closures](intro_physics.md). We enhance the model's performance and extend the its capability, during which we learn about basic machine learning techniques and best practices.
 
 
 ### Tentative project tasks
