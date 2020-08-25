@@ -37,3 +37,7 @@ In this Hackweek project, we first build a simple [machine learning model for pl
 - Lutz Rastaetter (NASA/GSFC)
 - Liang Wang (Princeton University; Team lead)
 - Yihua Zheng (NASA/GSFC)
+
+### Project folder structure
+- `notebooks`: Demo Jupyter Notebooks.
+- `contirbutors`: Folder to store stuff for individual contributors.
