@@ -34,7 +34,7 @@
 - `git clone https://github.com/heliohackweek/plasma_closure.git`
 - Check out the [resource page](https://github.com/edmondb/helio_info)
 - [git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-
+- It is preferred to work on your own branch, then merge back to the master
 
 ### View/run the Jupyter Notebooks
 We rely on Jupyter Notebooks for interactive coding and demonstration. After 
