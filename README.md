@@ -4,6 +4,7 @@ In this Hackweek project, we first build a simple [machine learning model for pl
 
 
 ### Tentative project tasks
+- Set up a handy Python environment and clone this repository following the [introduction](intro_setup_prep.md).
 - We will first build a simple model to learn the closure given by equation (1).
   - The input/feature data T consists sinusoidal modes of random phases and amplitudes.
   - The output/label data q will be computed from the closure equation (1).
