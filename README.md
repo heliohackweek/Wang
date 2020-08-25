@@ -8,7 +8,7 @@ In this Hackweek project, we first build a simple machine learning model for [pl
   - The input/feature data T consists sinusoidal modes of random phases and amplitudes.
   - The output/label data q will be computed from the closure equation (1).
   - The model has only three fully-connected (dense) layers, i.e., only one hidden layer.
-  - The model is implemented using TensorFlow.
+  - The model is implemented using TensorFlow and is demonstrated in the [Jupyter notebook](notebooks/fluid_closure_learning-1d-000.ipynb)
 - We will enhance the simple model. Tentative tasks are
   - Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
   - Learn and try [Convolutional Neural Networks(CNN)](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks).
@@ -20,7 +20,7 @@ In this Hackweek project, we first build a simple machine learning model for [pl
 - We will extend the code to 2d.
   - CNN could scale better than dense NN; GPU acceleration could be more significant.
 - Other tasks
-  - Accelerate non-ML codes using Numba and cupy, and possibly Dask.
+  - Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb)
   - Learn common open-source software license.
   - Build a pip or anaconda distributable package.
   - Build an affiliated website using Github Pages.
