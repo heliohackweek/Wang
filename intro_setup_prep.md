@@ -42,7 +42,7 @@
   git pull
   git merge NEW_BRANCH
   git push
-```
+  ```
 
 ### View/run the Jupyter Notebooks
 We rely on Jupyter Notebooks for interactive coding and demonstration. After 
