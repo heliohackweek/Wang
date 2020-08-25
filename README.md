@@ -38,18 +38,18 @@
 - We will first build a simple model to learn the closure given by equation (1).
   - The input/feature data T consists sinusoidal modes of random phases and amplitudes.
   - The output/label data q will be computed from the closure equation (1).
-- We will try to understand the simple model and enhance it. Example tasks are
-  - Understand the model performance scores.
-  - Learn how to train data batch-by-batch.
-  - Learn how to find optimal hyper-parameters (i.e., those related to machine learning algorithms).
+  - The model has only three fully-connected (dense) layers, i.e., only one hidden layer.
+  - The model is implemented using TensorFlow.
+- We will enhance the simple model. Tentative tasks are
   - Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
-  - Learn and try some basic structures of neural networks.
+  - Learn and try [Convolutional Neural Networks(CNN)](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks).
+  - Learn how to train data batch-by-batch.
+  - Learn how to find optimal hyper-parameters, i.e., those related to machine learning algorithms.
   - Learn how to accelerate the code using GPU.
-  - Learn how to debug TensorFlow codes.
-  - Learn the saved model coefficients/parameters and possibly how to use them outside of TensorFlow.
+  - Learn the saved model weights etc. and possibly how to use them outside of TensorFlow.
   - Learn to use PyTorch.
-  - Learn to write codes that chooses between CPU and GPU automatically.
-- We will extend the code to 2d/3d where certain type of neural networks could perform better than the others, and GPU acceleration could be more significant.
+- We will extend the code to 2d.
+  - CNN could scale better than dense NN; GPU acceleration could be more significant.
 
 
 
@@ -59,7 +59,7 @@
 - Colin Komar (NASA/GSFC)
 - Jian Li (NASA/GSFC; Support)
 - Ryan McGranaghan (ASTRA)
-- Saumitra Mukherjee (NASA/GSFC)
+- Saumitra Mukherjee (Jawaharlal Nehru University)
 - Lutz Rastaetter (NASA/GSFC)
 - Liang Wang (Princeton University; Team lead)
 - Yihua Zheng (NASA/GSFC)
