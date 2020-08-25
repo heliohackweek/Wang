@@ -19,10 +19,10 @@ __Note: Please suggest any topics in machine learning or python GPU that you fin
   - Learn how to accelerate the code using GPU.
   - Learn the saved model weights etc. and possibly how to use them outside of TensorFlow.
   - Learn to use PyTorch.
-- We will extend the code to 2d.
-  - CNN could scale better than dense NN; GPU acceleration could be more significant.
+  - Extend the code to 2d using CNN and GPU.
 - Other tasks
-  - Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb)
+  - Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb).
+  - Make interactive plots using bokeh or plotly.
   - Learn common open-source software license.
   - Build a pip or anaconda distributable package.
   - Build an affiliated website using Github Pages.
