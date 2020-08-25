@@ -47,9 +47,9 @@
 ### View/run the Jupyter Notebooks
 We rely on Jupyter Notebooks for interactive coding and demonstration. After 
 ```
-[~/src]$ cd plasma_closure/
-[~/src/plasma_closure]$ conda activate tf
-(tf) [~/src/plasma_closure]$ jupyter-notebook
+cd plasma_closure/
+conda activate tf
+jupyter-notebook
 ```
 A browser tab will pop up and open the url like http://localhost:8889/tree . If not, check the on-screen information shown after you run `jupyter-notebook` in the terminal and look for something like
 ```
