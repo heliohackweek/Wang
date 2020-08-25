@@ -48,3 +48,46 @@ Copy/paste this URL into your browser when you connect for the first time,
         http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6
 ```
 Here, you may open a browser and manually enter the url http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6
+
+
+### Working on the Rapids system
+```
+log into the nvidia cluster; otka must have been setup already
+a web browser window will pop up and you need to enter the user
+name and password you used when you signed up (not the crazy
+random strings)
+sft ssh raplab-hackathon
+
+# copy the singularity docker image
+cp /mnt/shared/helio_hackweek/helio-hackweek2020_latest.sif .
+
+# copy the script to start a jupyter server on the gpu node
+cp /mnt/shared/helio_hackweek/start_jupyter.sh .
+
+# in start_jupyter.sh, replace  the port number 8888 with a port
+# that has no conflict with others, say, 8895
+
+# request a job with gpu support
+srun --pty --gpus 1 bash -i
+
+# hostname command returns node name, say, dgx0183
+hostname
+
+# run the singularity image
+singularity shell --nv helio-hackweek2020_latest.sif
+
+# activate the conda environment
+source activate rapids
+
+# in start_jupyter.sh, replace dxg0180 with the  current node name, say dgx0183, and
+# modify the port number 8888 with a port that has no conflict with others, say, 8895
+
+# run the Jupyter server
+./start_jupyter.sh
+```
+```
+# in your local laptop terminal, run the following command, with dgx0183 replaced
+# by the node name, and 8895 replaced by the port number you chose
+sft ssh -L localhost:8895:dgx0183:8895 raplab-hackathon
+# in your local laptop terminal, open http://localhost:8895
+```
