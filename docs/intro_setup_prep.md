@@ -66,7 +66,7 @@ Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
         http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6
 ```
-Here, you may open a browser and manually enter the url http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6
+Here, you may open a browser and manually enter the url `http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6`
 
 
 ### Working on the Nvidia Rapids system
