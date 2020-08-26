@@ -1,8 +1,17 @@
 ## Getting started on your personal computer
 
+* [Useful resources](#useful-resources)
+* [Working on the local computer](#working-on-the-local-computer)
+  + [Python environment](#python-environment)
+  + [Collatorative working on the project Github repository](#collatorative-working-on-the-project-github-repository)
+  + [Run the Jupyter notebooks](#run-the-jupyter-notebooks)
+* [Working on the Nvidia Rapids system](#working-on-the-nvidia-rapids-system)
+
+### Useful resources
 - Helio Hackweek 2020 [resources](https://github.com/edmondb/helio_info), including [courses](https://astg606.github.io/py_courses/helio_hw2020/)
 
-### Setting up the Python environment
+### Working on the local computer
+#### Setting up the Python environment
 - Install miniconda
   - Anaconda/miniconda allows you to set up a clean Python environment easily. You can create multiple of them with different packages/configurations and switch between them.
   - Download a Python 3.7/3.8 installer from [here](https://docs.conda.io/en/latest/miniconda.html) and follow the [instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to install.
@@ -30,7 +39,7 @@
   ```
   Here, `-c bokeh` specifiy the channel in conda for the package `bokeh`. Sometimes, it is not necessary to specify the channel. If you are not sure about the channel or any specifics, it is usually useful to search for it in Google or https://anaconda.org/.
 
-### Collatorative working on the project's Github repository
+#### Collatoratively working on the project Github repository
 - `git clone https://github.com/heliohackweek/plasma_closure.git`
 - Check out the [resource page](https://github.com/edmondb/helio_info)
 - [git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -44,7 +53,7 @@
   git push
   ```
 
-### View/run the Jupyter Notebooks
+#### Running the Jupyter notebooks
 We rely on Jupyter Notebooks for interactive coding and demonstration. After 
 ```
 cd plasma_closure/
@@ -60,7 +69,7 @@ Copy/paste this URL into your browser when you connect for the first time,
 Here, you may open a browser and manually enter the url http://localhost:8890/?token=39a518ee2c5a09fca01ea256afbbf097d29ae82e6038dbe6
 
 
-### Working on the Rapids system
+### Working on the Nvidia Rapids system
 - On the local computer:
   ```
   # log into the nvidia cluster; otka must have been setup already
