@@ -101,3 +101,6 @@ source activate rapids
 sft ssh -L localhost:8895:dgx0183:8895 raplab-hackathon
 # in your local laptop terminal, open http://localhost:8895
 ```
+One may also use the adapted [start_jupyter.sh script](../scripts/start_jupyter.sh)
+that automatically prints the full sft command to be used with the correct hostname
+and ports.
