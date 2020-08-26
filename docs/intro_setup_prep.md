@@ -61,46 +61,59 @@ Here, you may open a browser and manually enter the url http://localhost:8890/?t
 
 
 ### Working on the Rapids system
-```
-log into the nvidia cluster; otka must have been setup already
-a web browser window will pop up and you need to enter the user
-name and password you used when you signed up (not the crazy
-random strings)
-sft ssh raplab-hackathon
+- On the local computer:
+  ```
+  # log into the nvidia cluster; otka must have been setup already
+  # a web browser window will pop up and you need to enter the user
+  # name and password you used when you signed up (not the crazy
+  # random strings)
+  sft ssh raplab-hackathon
+  ```
+- On the Nvidia Rapids cluster:
+  ```
+  # copy the singularity docker image
+  cp /mnt/shared/helio_hackweek/helio-hackweek2020_latest.sif .
 
-# copy the singularity docker image
-cp /mnt/shared/helio_hackweek/helio-hackweek2020_latest.sif .
+  # copy the script to start a jupyter server on the gpu node
+  cp /mnt/shared/helio_hackweek/start_jupyter.sh .
 
-# copy the script to start a jupyter server on the gpu node
-cp /mnt/shared/helio_hackweek/start_jupyter.sh .
+  # in start_jupyter.sh, replace  the port number 8888 with a port
+  # that has no conflict with others, say, 8895
 
-# in start_jupyter.sh, replace  the port number 8888 with a port
-# that has no conflict with others, say, 8895
+  # request a job with gpu support
+  srun --pty --gpus 1 bash -i
 
-# request a job with gpu support
-srun --pty --gpus 1 bash -i
+  # hostname command returns node name, say, dgx0183
+  hostname
 
-# hostname command returns node name, say, dgx0183
-hostname
+  # run the singularity image
+  singularity shell --nv helio-hackweek2020_latest.sif
 
-# run the singularity image
-singularity shell --nv helio-hackweek2020_latest.sif
+  # activate the conda environment
+  source activate rapids
 
-# activate the conda environment
-source activate rapids
+  # in start_jupyter.sh, replace dxg0180 with the  current node name, say dgx0183, and
+  # modify the port number 8888 with a port that has no conflict with others, say, 8895
 
-# in start_jupyter.sh, replace dxg0180 with the  current node name, say dgx0183, and
-# modify the port number 8888 with a port that has no conflict with others, say, 8895
+  # run the Jupyter server; consider using 
+  ./start_jupyter.sh
+  ```
+  - One may also use the adapted [start_jupyter.sh script](../scripts/start_jupyter.sh)
+  in the last step on the Nvidia cluster, that automatically prints the full sft command
+  to be used with the correct hostname and ports.
+  ```
+  # specify the port
+  $ ./start_jupyter.sh 8895
+  sft ssh -L localhost:8895:dgx0183:8895 raplab-hackathon
+  # using the port hardcoded in the script
+  $ ./start_jupyter.sh
+  sft ssh -L localhost:8890:dgx0183:8890 raplab-hackathon
+  ```
+- On the local computer:
+  ```
+  # in your local laptop terminal, run the following command, with dgx0183 replaced
+  # by the node name, and 8895 replaced by the port number you chose
+  sft ssh -L localhost:8895:dgx0183:8895 raplab-hackathon
+  # in your local laptop terminal, open http://localhost:8895
+  ```
 
-# run the Jupyter server
-./start_jupyter.sh
-```
-```
-# in your local laptop terminal, run the following command, with dgx0183 replaced
-# by the node name, and 8895 replaced by the port number you chose
-sft ssh -L localhost:8895:dgx0183:8895 raplab-hackathon
-# in your local laptop terminal, open http://localhost:8895
-```
-One may also use the adapted [start_jupyter.sh script](../scripts/start_jupyter.sh)
-that automatically prints the full sft command to be used with the correct hostname
-and ports.
