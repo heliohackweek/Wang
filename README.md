@@ -42,3 +42,5 @@ __Note: Please suggest any topics in machine learning or python GPU that you fin
 ### Project folder structure
 - `notebooks`: Demo Jupyter Notebooks.
 - `contirbutors`: Folder to store stuff for individual contributors.
+- `docs`: Background introduction and technical notes to get started.
+- `scripts`: Miscellaneous scripts.
