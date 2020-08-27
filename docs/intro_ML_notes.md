@@ -1,3 +1,7 @@
+#### Header-only C/C++ libraries for making predictions using a saved Keras model
+  - https://github.com/Dobiasd/frugally-deep
+  - https://github.com/pplonski/keras2cpp
+
 #### Max-pooling vs. Dropout
 - dropout:
   - In a dropout layer, a portion of the input data is thrown away/not used
