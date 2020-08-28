@@ -12,20 +12,20 @@ __Note: Please suggest any topics in machine learning or python GPU that you fin
   - The model has only three fully-connected (dense) layers, i.e., only one hidden layer.
   - The model is implemented using TensorFlow and is demonstrated in the [Jupyter notebook](notebooks/fluid_closure_learning-1d-000.ipynb)
 - We will enhance the simple model. Tentative tasks are
-  - Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
-  - Learn and try [Convolutional Neural Networks(CNN)](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks).
-  - Learn how to train data batch-by-batch.
-  - Learn how to find optimal hyper-parameters, i.e., those related to machine learning algorithms.
-  - Learn how to accelerate the code using GPU.
-  - Learn the saved model weights etc. and possibly how to use them outside of TensorFlow.
-  - Learn to use PyTorch.
-  - Extend the code to 2d using CNN and GPU.
+  - [x] Learn how to apply a model learned from data of lower-resolution to data of higher-resolution.
+  - [x] Learn and try [Convolutional Neural Networks(CNN)](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks).
+  - [x] Learn how to train data batch-by-batch.
+  - [x] Learn how to find optimal hyper-parameters, i.e., those related to machine learning algorithms.
+  - [x] Learn how to accelerate the code using GPU.
+  - [x] Learn the saved model weights etc. and possibly how to use them outside of TensorFlow.
+  - [x] Learn to use PyTorch.
+  - [x] Extend the code to 2d using CNN and GPU.
 - Other tasks
-  - Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb).
-  - Make interactive plots using bokeh or plotly.
-  - Learn common open-source software license.
-  - Build a pip or anaconda distributable package.
-  - Build an affiliated website using Github Pages.
+  - [x] Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb).
+  - [ ] Make interactive plots using bokeh or plotly.
+  - [ ] Learn common open-source software license.
+  - [ ] Build a pip or anaconda distributable package.
+  - [ ] Build an affiliated website using Github Pages.
 
 
 ### Team
