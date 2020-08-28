@@ -22,9 +22,10 @@ __Note: Please suggest any topics in machine learning or python GPU that you fin
   - [x] Extend the code to 2d using CNN and GPU.
 - Other tasks
   - [x] Accelerate non-ML codes using Numba and cupy, and possibly Dask. A base example can be found [here](notebooks/cupy.001.ipynb).
-  - [ ] Make interactive plots using bokeh or plotly.
+  - [ ] Make interactive plots using [bokeh](https://docs.bokeh.org/en/latest/index.html) or [plotly](https://plotly.com/).
   - [ ] Learn [common open-source software licenses](https://ufal.github.io/public-license-selector/).
   - [ ] Build a [pip](https://packaging.python.org/tutorials/packaging-projects/) or [anaconda](https://docs.anaconda.com/anaconda-cloud/user-guide/howto/#build-packages) distributable package.
+  - [ ] Create [DOI](https://guides.github.com/activities/citable-code/) for citing the project.
   - [ ] Build an affiliated website using [Github Pages](https://guides.github.com/features/pages/).
 
 
